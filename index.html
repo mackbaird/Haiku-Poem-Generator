@@ -18,17 +18,20 @@
     <header><h1>AI Haiku Generator</h1></header>
     <div class="container">
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the Topic for your Haiku"
-            id="haiku-prompt"
-            autofocus
-            required
-          />
-          <input type="submit" value="Submit" id="submit-button" />
-        </form>
-        <div class="poemSpace" id="poem"></div>
+        <div class="formWrapper">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter One Word for the Topic of your Haiku"
+              id="haiku-prompt"
+              autofocus
+              required
+            />
+            <input type="submit" value="Submit" id="submit-button" />
+          </form>
+          <small class="hints">For Example: Rose, Dew, or Mountain</small>
+        </div>
+        <div class="poemSpace hidden" id="poem"></div>
       </main>
       <footer>
         Coded by Mackenzie Baird, hosted on
