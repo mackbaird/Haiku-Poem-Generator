@@ -10,13 +10,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Haiku Generator</title>
   </head>
   <body>
     <header><h1>AI Haiku Generator</h1></header>
     <div class="container">
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the Topic for your Haiku"
@@ -26,7 +27,7 @@
           />
           <input type="submit" value="Submit" id="submit-button" />
         </form>
-        <div class="poemSpace">Poem</div>
+        <div class="poemSpace" id="poem"></div>
       </main>
       <footer>
         Coded by Mackenzie Baird, hosted on
